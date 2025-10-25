@@ -1,33 +1,25 @@
-☕ Sistema de Controle de Vendas – Cafeteria BomGosto
+☕ Cafeteria BomGosto – Sistema de Controle de Vendas
 
-Este projeto contém scripts SQL para criação, inserção e consultas de um sistema simples de controle de vendas de café para a cafeteria BomGosto.
+Banco de dados relacional desenvolvido para gerenciar vendas de café por meio de comandas.
+O projeto inclui criação das tabelas, inserção de dados e consultas SQL principais.
 
-📋 Estrutura do Banco de Dados
-
-O sistema é composto por três tabelas principais:
-
-Cardapio – contém os cafés disponíveis (nome, descrição e preço unitário).
-
-Comanda – registra as vendas realizadas (data, mesa e cliente).
-
-ItensComanda – relaciona cada café vendido em uma comanda, com quantidade e valor total.
-
+🧱 Estrutura do Banco
+Tabela	Descrição
+Cardapio	Armazena cafés disponíveis, com nome, descrição e preço unitário.
+Comanda	Registra cada venda: data, mesa e cliente.
+ItensComanda	Relaciona cafés vendidos em cada comanda (quantidade e valor).
 ⚙️ Funcionalidades
 
-Inclui scripts SQL para:
+✅ Criação das tabelas com chaves primárias e estrangeiras.
+✅ População inicial com cafés e comandas de exemplo.
+✅ Consultas SQL para:
 
-Criar as tabelas com chaves primárias e estrangeiras.
+Listar o cardápio em ordem alfabética;
 
-Popular o banco com dados de exemplo.
+Exibir comandas e itens com valores totais;
 
-Executar consultas para:
+Calcular o valor total por comanda;
 
-Listar o cardápio.
+Filtrar comandas com mais de um tipo de café;
 
-Exibir comandas e seus itens detalhados.
-
-Calcular o valor total por comanda.
-
-Filtrar comandas com mais de um tipo de café.
-
-Calcular o faturamento total por data.
+Calcular o faturamento diário.
